@@ -1,6 +1,13 @@
 *{
 	color: white;
 }
+.master{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 4rem;
+}
 
 /*LOADING HAMSTER*/
 .wheel-and-hamster {
