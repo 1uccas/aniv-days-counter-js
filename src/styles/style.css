@@ -11,7 +11,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-top: 4rem;
+	margin-top: 6rem;
 }
 
 /*LOADING HAMSTER*/
@@ -21,7 +21,7 @@
   width: 12em;
   height: 12em;
   font-size: 14px;
-  margin-top: 18rem;
+  margin-top: 16rem;
 }
 
 .wheel,
