@@ -28,3 +28,4 @@ include 'src/php/counter_days.php';
 		</div>
 	</div>
 </body>
+<script src="src/js/counter-minutes.js"></script>
