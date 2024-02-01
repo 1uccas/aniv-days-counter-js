@@ -4,7 +4,7 @@ const date = new Date();
 const year = date.getFullYear();
 const birthday = new Date(`${year}-10-01`).getTime();
 
-function return_date(birthday){
+function current_date(){
     const date = new Date();
     const year = date.getFullYear();
     const month = date.getMonth() + 1;
@@ -12,7 +12,13 @@ function return_date(birthday){
 
     const fullDate = `${year}-${month}-${day}`;
 
-    const calcBetwenDates = (new Date(fullDate).getTime() - new Date(birthday).getTime())*-1;
+    return fullDate;
+}
+
+function return_date(birthday){
+    const date = current_date();
+
+    const calcBetwenDates = (new Date(date).getTime() - new Date(birthday).getTime())*-1;
     const calcBetwenDays = calcBetwenDates / (1000 * 3600 * 24); //Return Days
 
     return Math.round(calcBetwenDays);
@@ -29,10 +35,11 @@ function return_time(){
 
 console.log(return_date(birthday))
 
+html.innerHTML += `<h1 style="display: block;">Missing ${return_date(birthday)} days for my birthday.</h1>`;
+
+/*
 setInterval(() => {
     html.innerHTML += `<h1 style="display: block;">Missing ${return_date(birthday)} days for my birthday.</h1>`;
     html.innerHTML = `<h1 style="display: hidden;">Missing ${return_date(birthday)} days for my birthday.</h1>`;
 }, 1000); 
-
-
-
+*/
