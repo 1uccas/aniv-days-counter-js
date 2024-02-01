@@ -29,7 +29,9 @@ function return_time(){
     const minutes = date.getMinutes();
     const seconds = date.getSeconds();
 
-    const fullHour = `${hour}:${minutes}:${seconds}`
+    const dateCurrent = current_date();
+
+    const fullHour = `${dateCurrent} ${hour}:${minutes}:${seconds}`
     return fullHour;
 }
 
@@ -37,9 +39,7 @@ console.log(return_date(birthday))
 
 html.innerHTML += `<h1 style="display: block;">Missing ${return_date(birthday)} days for my birthday.</h1>`;
 
-/*
 setInterval(() => {
-    html.innerHTML += `<h1 style="display: block;">Missing ${return_date(birthday)} days for my birthday.</h1>`;
-    html.innerHTML = `<h1 style="display: hidden;">Missing ${return_date(birthday)} days for my birthday.</h1>`;
+    html.innerHTML += `<h1 style="display: block;">Missing ${return_time()} days for my birthday.</h1>`;
+    html.innerHTML = `<h1 style="display: hidden;">Missing ${return_time()} days for my birthday.</h1>`;
 }, 1000); 
-*/
