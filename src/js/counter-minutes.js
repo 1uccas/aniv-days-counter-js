@@ -9,16 +9,21 @@ function return_date(){
     const mounth = date.getMonth();
     const day = date.getDate();
 
+    const fulldate = `${year}-${mounth+1}-${day}`;
+
+    return fulldate;
+}
+function return_time(){
+    const date = new Date();
     const hour = date.getHours();
     const minutes = date.getMinutes();
     const seconds = date.getSeconds();
 
     const fullHour = `${hour}:${minutes}:${seconds}`
-    
-    const fulldate = `${year}-${mounth+1}-${day} ${fullHour}`;
-
-    return fulldate;
+    return fullHour;
 }
+
+
 setInterval(() => {
     html.innerHTML += `<h1 style="display: block;">Faltam ${return_date()} para o seu aniversário.</h1>`;
     html.innerHTML = `<h1 style="display: hidden;">Faltam ${return_date()} para o seu aniversário.</h1>`;
