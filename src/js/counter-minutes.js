@@ -2,18 +2,20 @@ const html = document.querySelector(".class-h1");
 
 const date = new Date();
 const year = date.getFullYear();
-const birthday = `${year}-10-01`;
-//let calc = minutes - 
+const birthday = new Date(`${year}-10-01`).getTime();
 
-function return_date(){
+function return_date(birthday){
     const date = new Date();
     const year = date.getFullYear();
-    const mounth = date.getMonth();
+    const month = date.getMonth() + 1;
     const day = date.getDate();
 
-    const fulldate = `${year}-${mounth+1}-${day}`;
+    const fullDate = `${year}-${month}-${day}`;
 
-    return fulldate;
+    const calcBetwenDates = (new Date(fullDate).getTime() - new Date(birthday).getTime())*-1;
+    const calcBetwenDays = calcBetwenDates / (1000 * 3600 * 24); //Return Days
+
+    return Math.round(calcBetwenDays);
 }
 function return_time(){
     const date = new Date();
@@ -25,10 +27,11 @@ function return_time(){
     return fullHour;
 }
 
+console.log(return_date(birthday))
 
 setInterval(() => {
-    html.innerHTML += `<h1 style="display: block;">Faltam ${return_date()} para o seu aniversário.</h1>`;
-    html.innerHTML = `<h1 style="display: hidden;">Faltam ${return_date()} para o seu aniversário.</h1>`;
+    html.innerHTML += `<h1 style="display: block;">Missing ${return_date(birthday)} days for my birthday.</h1>`;
+    html.innerHTML = `<h1 style="display: hidden;">Missing ${return_date(birthday)} days for my birthday.</h1>`;
 }, 1000); 
 
 
