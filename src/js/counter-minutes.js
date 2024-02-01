@@ -1,6 +1,8 @@
 const html = document.querySelector(".class-h1");
 
-const birthday = "2024-10-01";
+const date = new Date();
+const year = date.getFullYear();
+const birthday = `${year}-10-01`;
 //let calc = minutes - 
 
 function return_date(){
