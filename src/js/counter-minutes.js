@@ -42,15 +42,15 @@ function return_time(){
         seconds: seconds < "10" ? `0${seconds}` : `${seconds}`,
     };
 
-    const fullHour = `${array_date_time.days}/${array_date_time.months}/${year} ${array_date_time.hours}:${array_date_time.minutes}:${array_date_time.seconds}`;
+    const fullHour = `${array_date_time.days}/${array_date_time.months}/${year} - ${array_date_time.hours}:${array_date_time.minutes}:${array_date_time.seconds}`;
     return fullHour;
 }
 
 console.log(return_date(birthday))
 
 setInterval(() => {
-    div_time.innerHTML += `<label style="display: block;">Today is ${return_time()}</label>`;
-    div_time.innerHTML = `<label style="display: hidden;">Today is ${return_time()}</label>`;
+    div_time.innerHTML += `<label style="display: block;">Today: is ${return_time()}</label>`;
+    div_time.innerHTML = `<label style="display: hidden;">Today: is ${return_time()}</label>`;
 }, 1000); 
 
 html.innerHTML += `<h1 style="display: block;">Missing ${return_date(birthday)} days for my birthday.</h1>`;
