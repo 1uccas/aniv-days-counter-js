@@ -16,6 +16,9 @@
 .current_time{
   margin-left: 15px;
 }
+#button_new_candle{
+  color: black;
+}
 /*LOADING HAMSTER*/
 .wheel-and-hamster {
   --dur: 1s;
