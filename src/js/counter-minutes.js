@@ -1,4 +1,5 @@
 const html = document.querySelector(".class-h1");
+const div_time = document.querySelector('.current_time');
 
 const date = new Date();
 const year = date.getFullYear();
@@ -29,17 +30,19 @@ function return_time(){
     const minutes = date.getMinutes();
     const seconds = date.getSeconds();
 
-    const dateCurrent = current_date();
+    const year = date.getFullYear();
+    const month = date.getMonth() + 1;
+    const day = date.getDate();
 
-    const fullHour = `${dateCurrent} ${hour}:${minutes}:${seconds}`
+    const fullHour = `${day}/${month}/${year} ${hour}:${minutes}:${seconds}`
     return fullHour;
 }
 
 console.log(return_date(birthday))
 
-html.innerHTML += `<h1 style="display: block;">Missing ${return_date(birthday)} days for my birthday.</h1>`;
-
 setInterval(() => {
-    html.innerHTML += `<h1 style="display: block;">Missing ${return_time()} days for my birthday.</h1>`;
-    html.innerHTML = `<h1 style="display: hidden;">Missing ${return_time()} days for my birthday.</h1>`;
+    div_time.innerHTML += `<label style="display: block;">Today is ${return_time()}.</label>`;
+    div_time.innerHTML = `<label style="display: hidden;">Today is ${return_time()}.</label>`;
 }, 1000); 
+
+html.innerHTML += `<h1 style="display: block;">Missing ${return_date(birthday)} days for my birthday.</h1>`;
