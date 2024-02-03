@@ -34,15 +34,23 @@ function return_time(){
     const month = date.getMonth() + 1;
     const day = date.getDate();
 
-    const fullHour = `${day}/${month}/${year} ${hour}:${minutes}:${seconds}`
+    const array_date_time = {
+        days: day < "10" ? `0${day}` : `${day}`,
+        months: month < "10" ? `0${month}` : `${month}`,
+        hours: hour < "10" ? `0${hour}` : `${hour}`,
+        minutes: minutes < "10" ? `0${minutes}` : `${minutes}`,
+        seconds: seconds < "10" ? `0${seconds}` : `${seconds}`,
+    };
+
+    const fullHour = `${array_date_time.days}/${array_date_time.months}/${year} ${array_date_time.hours}:${array_date_time.minutes}:${array_date_time.seconds}`;
     return fullHour;
 }
 
 console.log(return_date(birthday))
 
 setInterval(() => {
-    div_time.innerHTML += `<label style="display: block;">Today is ${return_time()}.</label>`;
-    div_time.innerHTML = `<label style="display: hidden;">Today is ${return_time()}.</label>`;
+    div_time.innerHTML += `<label style="display: block;">Today is ${return_time()}</label>`;
+    div_time.innerHTML = `<label style="display: hidden;">Today is ${return_time()}</label>`;
 }, 1000); 
 
 html.innerHTML += `<h1 style="display: block;">Missing ${return_date(birthday)} days for my birthday.</h1>`;
