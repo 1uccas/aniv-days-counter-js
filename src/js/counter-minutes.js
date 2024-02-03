@@ -53,8 +53,8 @@ function return_time(){
 console.log(return_date(birthday))
 
 setInterval(() => {
-    div_time.innerHTML += `<label style="display: block;">Today is: ${return_time()}</label>`;
-    div_time.innerHTML = `<label style="display: hidden;">Today is: ${return_time()}</label>`;
+    div_time.innerHTML += `<label style="display: block;">Today is: <strong>${return_time()}</strong></label>`;
+    div_time.innerHTML = `<label style="display: hidden;">Today is: <strong>${return_time()}</strong></label>`;
 }, 1000); 
 
 function my_birthday(date){
