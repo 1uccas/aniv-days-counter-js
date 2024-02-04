@@ -1,2 +1,3 @@
-# aniv-days-counter-php
-Contador de dias até o aniversário.
+# aniv-days-counter-js
+
+Neste repositório contém um contador de dias até o meu aniversário.
