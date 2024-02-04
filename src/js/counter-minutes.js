@@ -1,12 +1,12 @@
 const html = document.querySelector(".class-h1");
 const div_time = document.querySelector('.current_time');
-const hamster = document.querySelector('.wheel-and-hamster');
+const loader = document.querySelector('.loader');
 const cake = document.querySelector(".cake");
 
 const date = new Date();
 const year = date.getFullYear();
 const birthday = new Date(`${year}-10-01`).getTime();
-const test_date = new Date("2024-10-01").getTime();
+//const test_date = new Date("2024-10-01").getTime();
 
 function current_date(){
     const date = new Date();
@@ -15,9 +15,9 @@ function current_date(){
     const day = date.getDate();
 
     const fullDate = `${year}-${month}-${day}`;
-    const test_date = new Date("2024-10-01").getTime();
+    //const test_date = new Date("2024-10-01").getTime();
 
-    return test_date;
+    return fullDate;
 }
 
 function return_date(birthday){
@@ -60,13 +60,13 @@ setInterval(() => {
 function my_birthday(date){
     if (date != 0) {
         html.innerHTML += `<h1 style="display: block;">Missing ${return_date(birthday)} days for my birthday.</h1>`;
-        hamster.style.display = "block";
+        loader.style.display = "block";
         cake.style.display = "none";
     } else {
         html.innerHTML += `<h1>TODAY IS YOUR BIRTHDAY</h1>`
         cake.style.display = "block";
-        hamster.style.display = "none";
+        loader.style.display = "none";
     }
 }
 
-my_birthday(return_date(test_date))
+my_birthday(return_date(birthday))
