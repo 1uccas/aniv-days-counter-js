@@ -36,6 +36,8 @@ function return_date(birthday){
         const newCalcBetwenDates = (new Date(date).getTime() - new Date(`${updateYear}-10-01`).getTime())*-1;
         const newCalcBetwenDays = newCalcBetwenDates / (1000 * 3600 * 24);
         return Math.round(newCalcBetwenDays);
+    }else{
+        return console.log("Error.");
     }
     //return Math.round(calcBetwenDays)
 }
