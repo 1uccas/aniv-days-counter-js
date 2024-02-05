@@ -22,11 +22,22 @@ function current_date(){
 
 function return_date(birthday){
     const date = current_date();
+    //const date = new Date(`2025-02-05`).getTime();
+    const updateYear = (new Date().getFullYear()+1);
+
+    console.log(updateYear);
 
     const calcBetwenDates = (new Date(date).getTime() - new Date(birthday).getTime())*-1;
     const calcBetwenDays = calcBetwenDates / (1000 * 3600 * 24); //Return Days
 
-    return Math.round(calcBetwenDays);
+    if (calcBetwenDays >= 0) {
+        return Math.round(calcBetwenDays);
+    }else if(calcBetwenDays < 0){
+        const newCalcBetwenDates = (new Date(date).getTime() - new Date(`${updateYear}-10-01`).getTime())*-1;
+        const newCalcBetwenDays = newCalcBetwenDates / (1000 * 3600 * 24);
+        return Math.round(newCalcBetwenDays);
+    }
+    //return Math.round(calcBetwenDays)
 }
 function return_time(){
     const date = new Date();
