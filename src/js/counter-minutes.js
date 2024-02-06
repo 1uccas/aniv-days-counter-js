@@ -45,7 +45,6 @@ function return_date(birthday){
     }else{
         return console.log("Error.");
     }
-    //return Math.round(calcBetwenDays) (TEST)
 }
 //returns current time
 function return_time(){
