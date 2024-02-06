@@ -3,13 +3,13 @@ const html = document.querySelector(".class-h1");
 const div_time = document.querySelector('.current_time');
 const loader = document.querySelector('.loader');
 const cake = document.querySelector(".cake");
-const title = document.querySelector("#title").textContent = "Happy Birthday?";
+const title = document.querySelector("#title");
 
 //Creating an instance of the Date function
 const date = new Date();
 const year = date.getFullYear();
 const birthday = new Date(`${year}-10-01`).getTime(); //Assigning the current year (to always stay up to date)
-//const test_date = new Date("2024-10-01").getTime(); (TEST)
+//const test_date = new Date("2024-10-01").getTime(); //(TEST)
 
 //Creating a function that returns the current date
 function current_date(){
@@ -19,7 +19,7 @@ function current_date(){
     const day = date.getDate();
 
     const fullDate = `${year}-${month}-${day}`;
-    //const test_date = new Date("2024-10-01").getTime(); (TEST)
+    //const test_date = new Date("2024-10-01").getTime(); //(TEST)
 
     return fullDate;
 }
@@ -27,7 +27,7 @@ function current_date(){
 //Creating a function that returns a calculation of days until the birthday
 function return_date(birthday){
     const date = current_date();
-    //const date = new Date(`2025-02-05`).getTime(); (TEST)
+    //const date = new Date(`2024-10-01`).getTime(); //(TEST)
     const updateYear = (new Date().getFullYear()+1);
 
     console.log(updateYear);
@@ -81,11 +81,13 @@ setInterval(() => {
 function main(date){
     //If not - return the calculation of remaining days.
     if (date != 0) {
+        title.textContent = "Happy Birthday?";
         html.innerHTML += `<h1 style="display: block;">Missing ${return_date(birthday)} days for my birthday.</h1>`;
         loader.style.display = "block";
         cake.style.display = "none";
     //If so, create an html tag.
     } else {
+        title.textContent = "HAPPY BIRTHDAY!"
         html.innerHTML += `<h1>TODAY IS YOUR BIRTHDAY</h1>`
         cake.style.display = "block";
         loader.style.display = "none";
