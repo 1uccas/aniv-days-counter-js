@@ -23,31 +23,3 @@ Contributions are welcome! Feel free to open issues or send pull requests to imp
 
 ### License
 This project is licensed under the MIT License.
-
----
-
-# aniv-days-counter-js
-Este é um simples script em JavaScript para contar os dias até o seu aniversário.
-
-<img src="public/assets/img/aniv_counter_days_js.png">
-
-### Como Usar
-
-1. Clone este repositório para o seu computador - `git clone https://github.com/Luccxx/aniv-days-counter-js.git` 
-
-2. No terminal, navegue até o diretório onde você clonou este repositório.
-
-3. Abra o arquivo `index.html` 
-
-### Personalização
-Você pode personalizar o script para ajustar a data do seu aniversário. Basta abrir o arquivo `counter-minutes.js` e modificar a variável `const birthday` para a data do seu aniversário:
-
-```const birthday = new Date(`${year}-MM-DD`).getTime();```
-
-**🚨 Certifique-se de manter o formato 'YYYY-MM-DD' e a atribuição `getTime()`.**
-
-### Contribuições
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests para melhorar este script.
-
-### Licença
-Este projeto está licenciado sob a MIT License.
