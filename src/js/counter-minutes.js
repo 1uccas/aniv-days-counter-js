@@ -3,6 +3,7 @@ const html = document.querySelector(".class-h1");
 const div_time = document.querySelector('.current_time');
 const loader = document.querySelector('.loader');
 const cake = document.querySelector(".cake");
+const title = document.querySelector("#title").textContent = "Happy Birthday?";
 
 //Creating an instance of the Date function
 const date = new Date();
