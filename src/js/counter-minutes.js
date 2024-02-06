@@ -77,7 +77,7 @@ setInterval(() => {
 }, 1000); 
 
 //Main function that contains a conditional with the return_date function to check whether today is my birthday or not
-function my_birthday(date){
+function main(date){
     //If not - return the calculation of remaining days.
     if (date != 0) {
         html.innerHTML += `<h1 style="display: block;">Missing ${return_date(birthday)} days for my birthday.</h1>`;
@@ -92,4 +92,4 @@ function my_birthday(date){
 }
 
 //Starting main function
-my_birthday(return_date(birthday))
+main(return_date(birthday));
