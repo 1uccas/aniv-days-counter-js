@@ -1,0 +1,363 @@
+[33mcommit 1fe1470fff59c2e5fd98069d23bec5c14c44f5a6[m[33m ([m[1;36mHEAD -> [m[1;32mdevelop[m[33m)[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Mon Feb 5 20:36:16 2024 -0300
+
+    fix(js): updating 'after the birthday' bug
+    
+    Bug: The bug consisted of returning astronomical numbers after the end of the birthday.
+    
+    Resolution: implementation of logic to deal with what will happen with 'after the birthday', starting a recount through a new variable that will contain a function of the variable date -> date.getFullYear() + 1.
+
+[33mcommit 59d83e2ab337ac09e96ffd850052f88fbc546a4b[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Sat Feb 3 21:29:35 2024 -0300
+
+    fix: update loading for clock
+
+[33mcommit 6eb9f37aa9b6debce49762e9514a82fe2893071e[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Sat Feb 3 20:55:34 2024 -0300
+
+    fix(index): update title
+
+[33mcommit 27c27aeaadadbc8ded8ce33e21d000238a6a0e40[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Sat Feb 3 19:31:38 2024 -0300
+
+    fix(js): add strong tab
+
+[33mcommit 0293a7d9b44977382998892053789f0bc118e131[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Sat Feb 3 19:29:32 2024 -0300
+
+    style: reducing margin
+
+[33mcommit bc6f40c1e45a4b443cf3f6b701229d099c743f83[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Sat Feb 3 19:28:00 2024 -0300
+
+    feat(js): add new my_birthday function
+
+[33mcommit 3d6e838225a116dad242295ac7c43133a84bad85[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Sat Feb 3 18:28:33 2024 -0300
+
+    feat(js): add comment
+
+[33mcommit a2a424d7a2013f6742e36de923cdc4b812f7093c[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Sat Feb 3 18:26:40 2024 -0300
+
+    fix(js): exchanging clicks
+
+[33mcommit 688a53d9e596bf36f036584153cb089d52c0ee65[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Sat Feb 3 18:25:52 2024 -0300
+
+    feat(index): add title in button
+
+[33mcommit 74310d36fa97abef7729152621b743875321754b[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Sat Feb 3 18:23:01 2024 -0300
+
+    feat(js): add candle extinguishing and lighting function
+
+[33mcommit 1f7da6c622c22b48c8949212f487e655d1ca66da[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Sat Feb 3 18:08:21 2024 -0300
+
+    feat(index): add script light_candle.js
+
+[33mcommit 289ec64b2be85fb1e48d792e68dcad9779e4a2bf[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Sat Feb 3 18:05:49 2024 -0300
+
+    new folder utils
+
+[33mcommit 6cb3ff724750ef9a5dce496fd6119787583a9c37[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Sat Feb 3 18:04:28 2024 -0300
+
+    style: add color in button_new_candle
+
+[33mcommit ffef0d02c104a7b8497e49bd66fd223af5723989[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Sat Feb 3 18:01:54 2024 -0300
+
+    feat(index): add id in button
+
+[33mcommit 5c90d22886f9d8a5789bead90808b8d27f7f2191[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Sat Feb 3 17:59:37 2024 -0300
+
+    style: update margin and top (#cake) (.velas)
+
+[33mcommit b3dd398114db760ba7dbc0b94c635efec48de57b[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Sat Feb 3 17:55:58 2024 -0300
+
+    feat(index): add new button and label
+
+[33mcommit 433c690c8f387cdaff204df3119620495aa98894[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Sat Feb 3 17:51:43 2024 -0300
+
+    style: new style cake and fire
+
+[33mcommit 0fa861cd3438e9bb0a435df10571cdd2ef3ba2fc[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Sat Feb 3 17:51:04 2024 -0300
+
+    feat(index): add cake class
+
+[33mcommit 204b18bae047204104c911459d7a179059671b7d[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Sat Feb 3 17:09:23 2024 -0300
+
+    style: add margin in current_time div
+
+[33mcommit 25fdf49432108b656e202784ab7b2618a296ece8[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Sat Feb 3 17:04:37 2024 -0300
+
+    fix: update simple style
+
+[33mcommit ba1d4b48bb7812783e31ac392ff883819ca18b55[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Sat Feb 3 17:02:57 2024 -0300
+
+    feat(js): transforme date and time in array
+
+[33mcommit b36399b3f2220a4863927fd5bfd81130156628c1[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Sat Feb 3 16:46:40 2024 -0300
+
+    feat(js): add function time date in - current_time - div
+
+[33mcommit 3a3f6c62c6bc45a05dba284dfa6efb4cb2194243[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Sat Feb 3 16:44:07 2024 -0300
+
+    fix: update local div
+
+[33mcommit 03e4e58224d1e5b92dda7c45628b3d6c29d25bc1[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Sat Feb 3 16:41:09 2024 -0300
+
+    feat(index): add current_time class
+
+[33mcommit 0b4b25bc1e4268921e00e1210311c5f13d3f2fba[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Thu Feb 1 20:20:38 2024 -0300
+
+    fix(js): call time function in setInterval
+
+[33mcommit 386064f0675afd58c322b02172772816e3f6703f[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Thu Feb 1 18:02:45 2024 -0300
+
+    fix(js): tranform current_date in function
+
+[33mcommit 1b1070fb5d33be3298156fb82009e166e5f4b1d0[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Thu Feb 1 17:15:32 2024 -0300
+
+    feat(js): add calc of days between dates
+
+[33mcommit a717ad3ea76c40c33282ce89d1829eeb50332b0b[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Thu Feb 1 16:46:13 2024 -0300
+
+    fix(index): remove h1 in class-h1
+
+[33mcommit d721c572e019919b293c7cd7ebd4252af0731ad6[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Thu Feb 1 16:44:25 2024 -0300
+
+    fix(js): add current year in variable birthday
+
+[33mcommit 4a2f94b70886bd651eac934b8002c8bafd641006[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Thu Feb 1 16:42:37 2024 -0300
+
+    fix(js): add new function return_time()
+
+[33mcommit 9879fe8fd8c40ef729379b6e3715952ce5c4d5bd[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Thu Feb 1 16:40:25 2024 -0300
+
+    feat(js): add setInterval in return_date function
+
+[33mcommit 3c974f68659fdba91f4382f0bfd10f4df3d7a250[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Thu Feb 1 16:19:30 2024 -0300
+
+    fix(index): remove text in h1
+
+[33mcommit 85dddc6928bbad480b58a7b6a87812d11cebbc4e[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Thu Feb 1 16:16:59 2024 -0300
+
+    feat(index): new class h1
+
+[33mcommit 22f3eb0c1fc1a56b27ce47960bdc778834adba54[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Thu Feb 1 16:14:05 2024 -0300
+
+    fix(index): remove tag php
+
+[33mcommit 3161132c8fede607f6b6aea868ac95f5ff3c3cef[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Thu Feb 1 16:09:39 2024 -0300
+
+    delete foulder -> php
+
+[33mcommit 3eb37507d9f688db6b4d606b45e9f21387ded70e[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Thu Feb 1 16:06:58 2024 -0300
+
+    fix(index): remove include php
+
+[33mcommit 0813aafe1362ac66aed94e2238599f3ff14f4852[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Thu Feb 1 16:06:24 2024 -0300
+
+    delete index.php
+
+[33mcommit bda7a00cfe7f0f8d17fecdc593f42db0195978b6[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Thu Feb 1 16:05:43 2024 -0300
+
+    modify index -> .php -> .html
+
+[33mcommit 8962588db46b901e4fbb48f044adced8d6d19682[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Wed Jan 31 18:55:09 2024 -0300
+
+    feat: add link script module
+
+[33mcommit 96b9f2964d20f86ad86e27d5f18a9e50b848d50d[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Wed Jan 31 18:54:47 2024 -0300
+
+    feat(js): new date hour
+
+[33mcommit e157c25bb2659a5330b09da4bbd5f62501a1be9d[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Wed Jan 31 18:18:27 2024 -0300
+
+    feat(js): new date console
+
+[33mcommit 659fd447e5a875782c88b0039b7ff6a96b4c073d[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Wed Jan 31 18:17:26 2024 -0300
+
+    feat(index): add id in h1
+
+[33mcommit e066a04ef5bb7c57ffc332e957f199509de579df[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Wed Jan 31 18:06:18 2024 -0300
+
+    feat: new folder
+
+[33mcommit 8df2b02144baf868b1e1ff433b6719397c4b9372[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Tue Jan 30 21:38:22 2024 -0300
+
+    tab code
+
+[33mcommit 85992a79a297d752b31fa1d69b5e9d35717f7f45[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Tue Jan 30 21:35:48 2024 -0300
+
+    style: margin-top class
+
+[33mcommit e76e864d770b228f9712ebc11052d9b50b84a65e[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Tue Jan 30 21:34:30 2024 -0300
+
+    feat(index): add function returnDays(html)
+
+[33mcommit 78c7ce9c193a0d7f419ef8e3760f6fba3cbd6db8[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Tue Jan 30 21:33:20 2024 -0300
+
+    feat: add function returnDays (php)
+
+[33mcommit c4ea89e02b676bc1fc08f1bcd1030fcbbfaca38c[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Tue Jan 30 21:13:27 2024 -0300
+
+    style(index): add import from external source
+
+[33mcommit 1927e40ba109923dd357647ed0131e7bd061245c[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Tue Jan 30 21:05:27 2024 -0300
+
+    feat(index): add new font
+
+[33mcommit 2eacf416be6efe8b5172043d63136b02d9050f4b[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Tue Jan 30 20:59:07 2024 -0300
+
+    style(index): styling master div
+
+[33mcommit 9185ddcb43b59cf53b962ef3138b0554fb553f9a[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Tue Jan 30 20:56:20 2024 -0300
+
+    style(index): styling loading
+
+[33mcommit 8db94e17c16aae2adc8802e6c1268da57d840067[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Tue Jan 30 20:50:04 2024 -0300
+
+    feat(index): new div loading
+
+[33mcommit 1673d21a6fb63f5946b633e9812f0346490d5480[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Tue Jan 30 20:08:08 2024 -0300
+
+    style: * color white
+
+[33mcommit f84cd58bd8d368d070a08a4263ef0806ebab2c36[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Tue Jan 30 20:07:06 2024 -0300
+
+    feat(index): add new link css
+
+[33mcommit 739fea7b217be361076558bd21484e174d265fdf[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Tue Jan 30 20:06:35 2024 -0300
+
+    feat: new archive
+
+[33mcommit 5991f60ebfd9b9d020233e124e80af05e3a14840[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Tue Jan 30 20:05:03 2024 -0300
+
+    feat(index): add new class and tag h1
+
+[33mcommit 40895d6ab0ab87251ab834da6330736980833ad5[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Tue Jan 30 20:01:22 2024 -0300
+
+    feat(index): add class body
+
+[33mcommit e7f30c5275c625fc4d1b9f116c3f530422d9ee8b[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Tue Jan 30 19:58:37 2024 -0300
+
+    feat(index): new link bootstrap
+
+[33mcommit 3f7adb70ec5817eb07955448fa2f7507f2a680d6[m
+Author: Lucas N <98057712+Luccxx@users.noreply.github.com>
+Date:   Tue Jan 30 19:46:31 2024 -0300
+
+    feat: first commit - add new archive index.php
+
+[33mcommit 01f76fea7e49f37e345a390e0075db82623267ed[m
+Author: Lucas N. Feitosa <98057712+Luccxx@users.noreply.github.com>
+Date:   Tue Jan 30 19:30:31 2024 -0300
+
+    Initial commit
